@@ -1,0 +1,97 @@
+---
+type: workflow
+id: data-analysis-pipeline
+title: Data Analysis Pipeline
+description: "End-to-end quantitative and qualitative data analysis workflow for research projects"
+tags: [Production, Tested]
+connections:
+  - target: quantitative-analysis
+    type: uses
+  - target: qualitative-coding
+    type: uses
+  - target: data-visualisation-design
+    type: uses
+  - target: dataset-profiler
+    type: uses
+  - target: statistical-test-selector
+    type: uses
+  - target: thematic-coder
+    type: uses
+  - target: findings-synthesiser
+    type: uses
+  - target: analysis-report-writer
+    type: uses
+  - target: claude-service
+    type: runs_on
+  - target: research-statistics-reference
+    type: references
+  - target: data-analysis-checklist
+    type: references
+  - target: analysis-report-template
+    type: uses
+metadata:
+  estimated_duration: "60-120 minutes"
+  trigger: manual
+---
+
+## Overview
+
+This workflow orchestrates a complete data analysis cycle for research projects, supporting both quantitative and qualitative approaches. It guides researchers from initial dataset profiling through statistical testing, qualitative coding, synthesis, and final report writing. The pipeline is designed for mixed-methods research but works equally well for purely quantitative or purely qualitative studies — simply skip the irrelevant stages.
+
+## Pipeline Stages
+
+### Stage 1: Dataset Profiling
+
+**Input:** Raw dataset or dataset summary (variable names, types, sample size, collection method), research questions
+
+Invoke the **quantitative-analysis** skill via the **dataset-profiler** prompt. The profiler examines the dataset's structure, identifies variable types (continuous, categorical, ordinal), flags missing data patterns, detects potential outliers, and recommends broad analysis approaches suited to the data characteristics and research questions.
+
+**Output:** Dataset profile report with variable classifications, descriptive statistics summary, missing data assessment, and recommended analysis strategies.
+
+**Checkpoint:** Review the profile before proceeding. If the dataset has significant quality issues (more than 20% missing data on key variables, severe outliers, or unexpected variable types), address data cleaning before continuing.
+
+### Stage 2: Statistical Test Selection
+
+**Input:** Dataset profile from Stage 1, specific research hypotheses or questions
+
+Invoke the **quantitative-analysis** skill via the **statistical-test-selector** prompt. Based on the data characteristics, sample size, variable types, and research questions, recommend appropriate statistical tests with full justification.
+
+**Output:** Recommended statistical tests with rationale, assumption checks required, effect size measures, and sample size adequacy assessment.
+
+**Checkpoint:** Verify that assumption checks pass before running the recommended tests. If assumptions are violated, the prompt provides alternative non-parametric or robust methods.
+
+### Stage 3: Qualitative Coding
+
+**Input:** Qualitative data (interview transcripts, open-ended survey responses, field notes), research questions, theoretical framework (if applicable)
+
+Invoke the **qualitative-coding** skill via the **thematic-coder** prompt. Apply systematic thematic coding following Braun and Clarke's six-phase approach: familiarisation, initial coding, theme searching, theme reviewing, theme defining, and reporting.
+
+**Output:** Codebook with code definitions, themed groupings, illustrative quotations, and a thematic map showing relationships between themes.
+
+**Checkpoint:** Review initial codes for consistency and completeness. Ensure themes are coherent, distinctive, and grounded in the data rather than imposed from theory.
+
+### Stage 4: Findings Synthesis
+
+**Input:** Quantitative results from Stage 2, qualitative themes from Stage 3, research questions
+
+Invoke the **quantitative-analysis** and **qualitative-coding** skills via the **findings-synthesiser** prompt. Synthesise findings across data strands, identifying where quantitative and qualitative findings converge, diverge, or complement each other.
+
+**Output:** Integrated findings narrative with convergence/divergence analysis, triangulation assessment, and key insights.
+
+**Checkpoint:** Ensure the synthesis does not overstate convergence or ignore contradictions. Flag any findings that are supported by only one data strand.
+
+### Stage 5: Analysis Report Writing
+
+**Input:** All outputs from Stages 1-4, the **analysis-report-template** asset
+
+Invoke the **data-visualisation-design** skill and the **analysis-report-writer** prompt. Produce a complete analysis section suitable for a research paper, dissertation chapter, or standalone report. Include recommendations for visualisations to support the narrative.
+
+**Output:** Complete analysis report draft with visualisation specifications.
+
+## Error Handling
+
+- If the dataset profile reveals insufficient data for the planned analysis, recommend minimum sample sizes and suggest alternative approaches that work with smaller samples
+- If statistical assumptions are violated and no suitable alternative test exists, document the limitation explicitly rather than proceeding with an inappropriate test
+- If qualitative coding produces too many codes (over 80), revisit the coding framework and consolidate at a higher level of abstraction
+- If quantitative and qualitative findings directly contradict each other, present both strands transparently and discuss possible explanations rather than privileging one over the other
+- If the dataset contains sensitive data (identifiable participants, health records), flag this at the profiling stage and ensure all outputs are appropriately anonymised
