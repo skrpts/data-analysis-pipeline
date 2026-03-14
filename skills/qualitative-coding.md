@@ -5,7 +5,7 @@ title: Qualitative Coding
 description: "Applies systematic thematic coding to qualitative data using established frameworks"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: research-statistics-reference
     type: references

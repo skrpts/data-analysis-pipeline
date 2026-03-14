@@ -21,7 +21,7 @@ connections:
     type: uses
   - target: analysis-report-writer
     type: uses
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: research-statistics-reference
     type: references
@@ -95,3 +95,48 @@ Invoke the **data-visualisation-design** skill and the **analysis-report-writer*
 - If qualitative coding produces too many codes (over 80), revisit the coding framework and consolidate at a higher level of abstraction
 - If quantitative and qualitative findings directly contradict each other, present both strands transparently and discuss possible explanations rather than privileging one over the other
 - If the dataset contains sensitive data (identifiable participants, health records), flag this at the profiling stage and ensure all outputs are appropriately anonymised
+
+## Inputs
+
+| Name | Required | Description | Example |
+|------|----------|-------------|---------|
+| `{{input.raw_dataset_or_dataset}}` | Yes | Raw dataset or dataset summary | `Paste the latest metrics, exported data, or summary notes relevant to the workflow.` |
+| `{{input.research_questions}}` | Yes | research questions | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.specific_research_hypotheses_or}}` | Yes | specific research hypotheses or questions | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.qualitative_data}}` | No | Qualitative data | `Paste the latest metrics, exported data, or summary notes relevant to the workflow.` |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| Dataset profile report | Dataset profile report with variable classifications, descriptive statistics summary, missing data assessment, and recommended analysis strategies |
+| Recommended statistical tests | Recommended statistical tests with rationale, assumption checks required, effect size measures, and sample size adequacy assessment |
+| Codebook | Codebook with code definitions, themed groupings, illustrative quotations, and a thematic map showing relationships between themes |
+| Integrated findings narrative | Integrated findings narrative with convergence/divergence analysis, triangulation assessment, and key insights |
+| Complete analysis report draft | Complete analysis report draft with visualisation specifications |
+
+## Setup
+
+Before running this workflow:
+
+1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
+2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
+
+## Provider Notes
+
+- Most stages work with any capable model; stronger models usually improve synthesis, judgement, and writing quality.
+- Extraction, classification, and formatting steps generally run well on smaller or faster models.
+- Because there are no vendor-specific integrations here, provider choice is mostly a trade-off between speed, quality, and cost.
+
+## Example Input
+
+To test this workflow immediately after import:
+
+```
+Raw Dataset Or Dataset: "Paste the latest metrics, exported data, or summary notes relevant to the workflow."
+Research Questions: "Paste the relevant brief, notes, source material, or dataset here."
+Specific Research Hypotheses Or: "Paste the relevant brief, notes, source material, or dataset here."
+Qualitative Data: "Paste the latest metrics, exported data, or summary notes relevant to the workflow."
+```
+

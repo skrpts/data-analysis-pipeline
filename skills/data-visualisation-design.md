@@ -5,7 +5,7 @@ title: Data Visualisation Design
 description: "Designs effective data visualisations to communicate research findings clearly"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: research-statistics-reference
     type: references

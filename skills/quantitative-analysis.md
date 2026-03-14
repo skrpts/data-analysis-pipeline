@@ -5,7 +5,7 @@ title: Quantitative Analysis
 description: "Guides statistical analysis of numerical research data — from descriptive statistics through inferential testing"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: research-statistics-reference
     type: references
