@@ -68,11 +68,11 @@ Note any constraints on the integration: different samples, timing differences b
 
 ### Inputs
 
-- **Quantitative results:** {{quantitative_results}}
-- **Qualitative themes:** {{qualitative_themes}}
-- **Research questions:** {{research_questions}}
-- **Study design:** {{study_design}}
-- **Integration approach:** {{integration_approach}} (convergent, explanatory sequential, exploratory sequential, or embedded)
+- **Quantitative results:** [the statistical test results from Stage 2]
+- **Qualitative themes:** [the thematic analysis from Stage 3]
+- **Research questions:** Use the research questions provided in the earlier stages.
+- **Study design:** Use the study design identified in the dataset profile from Stage 1.
+- **Integration approach:** {{input.integration_approach}} (convergent, explanatory sequential, exploratory sequential, or embedded)
 
 ### Output Format
 

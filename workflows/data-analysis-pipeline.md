@@ -100,10 +100,22 @@ Invoke the **data-visualisation-design** skill and the **analysis-report-writer*
 
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
-| `{{input.raw_dataset_or_dataset}}` | Yes | Raw dataset or dataset summary | `Paste the latest metrics, exported data, or summary notes relevant to the workflow.` |
-| `{{input.research_questions}}` | Yes | research questions | `Paste the relevant brief, notes, source material, or dataset here.` |
-| `{{input.specific_research_hypotheses_or}}` | Yes | specific research hypotheses or questions | `Paste the relevant brief, notes, source material, or dataset here.` |
-| `{{input.qualitative_data}}` | No | Qualitative data | `Paste the latest metrics, exported data, or summary notes relevant to the workflow.` |
+| `{{input.raw_dataset_or_dataset}}` | Yes | Raw dataset or dataset summary (variable names, types, sample size, collection method) | `Paste the latest metrics, exported data, or summary notes relevant to the workflow.` |
+| `{{input.research_questions}}` | Yes | The research questions guiding analysis | `What is the relationship between X and Y?` |
+| `{{input.specific_research_hypotheses_or}}` | Yes | Specific research hypotheses or questions for statistical testing | `Students who receive intervention X will score higher on measure Y than controls.` |
+| `{{input.qualitative_data}}` | No | Qualitative data (interview transcripts, open-ended responses, field notes) | `Paste the latest metrics, exported data, or summary notes relevant to the workflow.` |
+| `{{input.sample_size}}` | No | Total sample size | `150` |
+| `{{input.collection_method}}` | No | How the data was collected | `Online survey with convenience sampling` |
+| `{{input.variable_list}}` | No | List of variables in the dataset | `age, gender, score_pre, score_post, group` |
+| `{{input.study_design}}` | No | The study design used | `Between-subjects experimental design` |
+| `{{input.alpha_level}}` | No | Significance level for statistical tests | `0.05` |
+| `{{input.coding_approach}}` | No | Qualitative coding approach | `inductive` |
+| `{{input.theoretical_framework}}` | No | Theoretical framework for qualitative analysis | `none — inductive analysis` |
+| `{{input.participant_context}}` | No | Context about participants for qualitative analysis | `12 secondary school teachers from urban schools` |
+| `{{input.integration_approach}}` | No | Mixed-methods integration approach | `convergent` |
+| `{{input.discipline}}` | No | Academic discipline for reporting conventions | `Psychology` |
+| `{{input.target_format}}` | No | Target journal or report format | `APA journal article` |
+| `{{input.reporting_standard}}` | No | Reporting standard to follow | `APA 7th edition` |
 
 ## Outputs
 

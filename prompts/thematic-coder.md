@@ -36,7 +36,7 @@ Generate codes systematically across the entire dataset. Each code should:
 - Be labelled with a concise, descriptive name
 - Include a brief definition (one sentence) explaining what it captures
 - Be applied consistently — the same concept in different participants' data should receive the same code
-- Use {{coding_approach}} coding (inductive = driven by the data; deductive = driven by the theoretical framework; hybrid = both)
+- Use the specified coding approach (inductive = driven by the data; deductive = driven by the theoretical framework; hybrid = both)
 
 **Phase 3: Theme Development**
 Group related codes into candidate themes. For each candidate theme:
@@ -64,11 +64,11 @@ Write a narrative summary (500-800 words) that tells the story of the data throu
 
 ### Inputs
 
-- **Qualitative data:** {{qualitative_data}}
-- **Research questions:** {{research_questions}}
-- **Coding approach:** {{coding_approach}} (inductive / deductive / hybrid)
-- **Theoretical framework:** {{theoretical_framework}} (if applicable, otherwise state "none — inductive analysis")
-- **Participant context:** {{participant_context}}
+- **Qualitative data:** {{input.qualitative_data}}
+- **Research questions:** Use the research questions provided at the start of the pipeline.
+- **Coding approach:** {{input.coding_approach}} (inductive / deductive / hybrid)
+- **Theoretical framework:** {{input.theoretical_framework}} (if applicable, otherwise state "none — inductive analysis")
+- **Participant context:** {{input.participant_context}}
 
 ### Output Format
 

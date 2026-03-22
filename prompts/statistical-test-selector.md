@@ -57,11 +57,11 @@ For each assumption of the recommended test, specify:
 
 ### Inputs
 
-- **Dataset profile:** {{dataset_profile}}
-- **Research questions:** {{research_questions}}
-- **Study design:** {{study_design}}
-- **Sample size per group:** {{sample_sizes}}
-- **Significance level:** {{alpha_level}} (default: 0.05)
+- **Dataset profile:** [the dataset profile from Stage 1]
+- **Research questions:** {{input.specific_research_hypotheses_or}}
+- **Study design:** Use the study design identified in the dataset profile from Stage 1.
+- **Sample size per group:** Use the sample size identified in the dataset profile from Stage 1.
+- **Significance level:** {{input.alpha_level}} (default: 0.05)
 
 ### Output Format
 

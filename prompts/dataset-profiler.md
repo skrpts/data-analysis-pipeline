@@ -21,7 +21,7 @@ Drives the initial dataset profiling stage of the analysis pipeline. Examines da
 
 ## Prompt
 
-You are a research methods consultant specialising in data analysis planning. A researcher has provided a dataset summary for a study they are conducting. Your task is to produce a comprehensive dataset profile that will guide all subsequent analysis decisions.
+You are a research methods consultant specialising in data analysis planning. A researcher has provided a dataset summary for a study they are conducting. Your task is to produce a detailed dataset profile that will guide all subsequent analysis decisions.
 
 ### Instructions
 
@@ -60,11 +60,11 @@ List specific data cleaning and preparation steps the researcher should complete
 
 ### Inputs
 
-- **Dataset description:** {{dataset_description}}
-- **Research questions:** {{research_questions}}
-- **Sample size:** {{sample_size}}
-- **Data collection method:** {{collection_method}}
-- **Variable list:** {{variable_list}}
+- **Dataset description:** {{input.raw_dataset_or_dataset}}
+- **Research questions:** {{input.research_questions}}
+- **Sample size:** {{input.sample_size}}
+- **Data collection method:** {{input.collection_method}}
+- **Variable list:** {{input.variable_list}}
 
 ### Output Format
 
