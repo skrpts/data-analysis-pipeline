@@ -65,7 +65,7 @@ Write a narrative summary (500-800 words) that tells the story of the data throu
 ### Inputs
 
 - **Qualitative data:** {{input.qualitative_data}}
-- **Research questions:** Use the research questions provided at the start of the pipeline.
+- **Research questions:** {{input.research_questions}}
 - **Coding approach:** {{input.coding_approach}} (inductive / deductive / hybrid)
 - **Theoretical framework:** {{input.theoretical_framework}} (if applicable, otherwise state "none — inductive analysis")
 - **Participant context:** {{input.participant_context}}

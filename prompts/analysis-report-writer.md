@@ -69,10 +69,10 @@ For each recommended figure or table:
 
 ### Inputs
 
-- **Dataset profile:** [the dataset profile from Stage 1]
-- **Statistical results:** [the statistical test results from Stage 2]
-- **Qualitative themes:** [the thematic analysis from Stage 3, if applicable]
-- **Synthesis findings:** [the integrated findings from Stage 4, if applicable]
+- **Dataset profile:** {{steps.dataset-profiler.output}}
+- **Statistical results:** {{steps.statistical-test-selector.output}}
+- **Qualitative themes:** {{steps.thematic-coder.output}}
+- **Synthesis findings:** {{steps.findings-synthesiser.output}}
 - **Discipline:** {{input.discipline}}
 - **Target journal/format:** {{input.target_format}}
 - **Reporting standard:** {{input.reporting_standard}} (default: APA 7th edition)
