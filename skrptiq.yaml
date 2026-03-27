@@ -24,9 +24,11 @@ tags:
 
 # --- Security & Access ---
 requires:
-  services: []
+  services:
+    - "llm-service"
   permissions: []
   data_handling:
+    - "pii"
     - "research-data"
     - "survey-responses"
     - "interview-transcripts"
