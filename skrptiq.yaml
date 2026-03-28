@@ -1,4 +1,5 @@
 # --- Identity ---
+id: "26ef9ead-86b3-4252-b5a7-e7584c20a589"
 name: "data-analysis-pipeline"
 display_name: "Data Analysis Pipeline"
 description: "Quantitative and qualitative data analysis workflows for research projects"
