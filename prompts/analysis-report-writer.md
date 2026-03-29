@@ -3,7 +3,7 @@ type: prompt
 id: analysis-report-writer
 title: Analysis Report Writer
 description: "Writes up the analysis section of a research paper or report"
-tags: [Production, analysis:data, data:quantitative]
+tags: [Production, Academic, Data]
 connections:
   - target: quantitative-analysis
     type: derived_from

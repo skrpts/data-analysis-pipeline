@@ -3,7 +3,7 @@ type: prompt
 id: statistical-test-selector
 title: Statistical Test Selector
 description: "Recommends appropriate statistical tests based on data characteristics and research questions"
-tags: [Production, analysis:data, planning:research, data:quantitative]
+tags: [Production, Data, Research]
 connections:
   - target: quantitative-analysis
     type: derived_from

@@ -3,7 +3,7 @@ type: prompt
 id: findings-synthesiser
 title: Findings Synthesiser
 description: "Synthesises quantitative and qualitative findings into an integrated narrative"
-tags: [Production, analysis:data, analysis:qualitative, research:synthesis, data:quantitative]
+tags: [Production, Data, Research]
 connections:
   - target: quantitative-analysis
     type: derived_from

@@ -3,7 +3,7 @@ type: workflow
 id: data-analysis-pipeline
 title: Data Analysis Pipeline
 description: "End-to-end quantitative and qualitative data analysis workflow for research projects"
-tags: [Production, Tested, analysis:data, analysis:qualitative, data:quantitative]
+tags: [Production, Tested, Academic, Data]
 connections:
   - target: quantitative-analysis
     type: uses

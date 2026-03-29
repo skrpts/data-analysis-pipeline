@@ -3,7 +3,7 @@ type: prompt
 id: dataset-profiler
 title: Dataset Profiler
 description: "Profiles a dataset and identifies appropriate analysis approaches"
-tags: [Production, analysis:data, data:quantitative]
+tags: [Production, Data, Research]
 connections:
   - target: quantitative-analysis
     type: derived_from

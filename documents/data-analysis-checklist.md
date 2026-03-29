@@ -3,7 +3,7 @@ type: document
 id: data-analysis-checklist
 title: Data Analysis Checklist
 description: "Pre-analysis and post-analysis quality checklist for research data analysis"
-tags: [Production, Customer-Facing, analysis:data, data:quantitative]
+tags: [Production, Customer-Facing, Data, Research]
 connections:
   - target: quantitative-analysis
     type: references

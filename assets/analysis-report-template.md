@@ -3,7 +3,7 @@ type: asset
 id: analysis-report-template
 title: Analysis Report Template
 description: "Structured template for writing up the analysis section of a research paper"
-tags: [Production, Customer-Facing, analysis:data, data:quantitative]
+tags: [Production, Customer-Facing, Academic, Data, Writing]
 connections:
   - target: analysis-report-writer
     type: references

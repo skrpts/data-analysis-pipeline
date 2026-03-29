@@ -3,7 +3,7 @@ type: skill
 id: data-visualisation-design
 title: Data Visualisation Design
 description: "Designs effective data visualisations to communicate research findings clearly"
-tags: [Production, Tested, analysis:data, data:quantitative, data:visualisation]
+tags: [Production, Tested, Data, Research]
 connections:
   - target: llm-service
     type: runs_on

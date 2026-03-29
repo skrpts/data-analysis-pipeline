@@ -3,7 +3,7 @@ type: skill
 id: quantitative-analysis
 title: Quantitative Analysis
 description: "Guides statistical analysis of numerical research data — from descriptive statistics through inferential testing"
-tags: [Production, Tested, analysis:data, data:quantitative]
+tags: [Production, Tested, Data, Research]
 connections:
   - target: llm-service
     type: runs_on
