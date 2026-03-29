@@ -11,6 +11,8 @@ connections:
     type: uses
   - target: data-visualisation-design
     type: uses
+  - target: data-interpretation
+    type: uses
   - target: dataset-profiler
     type: uses
   - target: statistical-test-selector
@@ -20,6 +22,8 @@ connections:
   - target: findings-synthesiser
     type: uses
   - target: analysis-report-writer
+    type: uses
+  - target: interpret-data
     type: uses
   - target: llm-service
     type: runs_on
