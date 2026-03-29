@@ -3,7 +3,7 @@ type: source
 id: research-statistics-reference
 title: Research Statistics Reference
 description: "Reference guide to common statistical methods used in social science and health research"
-tags: [Production, Customer-Facing]
+tags: [Production, Customer-Facing, analysis:data, data:quantitative]
 connections: []
 metadata:
   source_type: reference

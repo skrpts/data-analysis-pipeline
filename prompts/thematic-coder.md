@@ -3,7 +3,7 @@ type: prompt
 id: thematic-coder
 title: Thematic Coder
 description: "Applies thematic coding to qualitative data following established frameworks"
-tags: [Production]
+tags: [Production, analysis:data, analysis:qualitative, data:quantitative, data:qualitative]
 connections:
   - target: qualitative-coding
     type: derived_from

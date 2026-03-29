@@ -3,7 +3,7 @@ type: skill
 id: qualitative-coding
 title: Qualitative Coding
 description: "Applies systematic thematic coding to qualitative data using established frameworks"
-tags: [Production, Tested]
+tags: [Production, Tested, analysis:data, analysis:qualitative, data:quantitative, data:qualitative]
 connections:
   - target: llm-service
     type: runs_on
