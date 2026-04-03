@@ -33,6 +33,8 @@ connections:
     type: references
   - target: analysis-report-template
     type: uses
+  - target: visual-spec-generation
+    type: uses
 metadata:
   estimated_duration: "60-120 minutes"
   trigger: manual
