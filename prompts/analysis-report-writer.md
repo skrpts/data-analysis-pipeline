@@ -69,10 +69,10 @@ For each recommended figure or table:
 
 ### Inputs
 
-- **Dataset profile:** {{steps.dataset-profiler.output}}
-- **Statistical results:** {{steps.statistical-test-selector.output}}
-- **Qualitative themes:** {{steps.thematic-coder.output}}
-- **Synthesis findings:** {{steps.findings-synthesiser.output}}
+- **Dataset profile:** {{steps.Quantitative Analysis.output}}
+- **Statistical results:** {{steps.Quantitative Analysis.output}}
+- **Qualitative themes:** {{steps.Qualitative Coding.output}}
+- **Synthesis findings:** {{steps.Quantitative Analysis.output}}
 - **Discipline:** {{input.discipline}}
 - **Target journal/format:** {{input.target_format}}
 - **Reporting standard:** {{input.reporting_standard}} (default: APA 7th edition)

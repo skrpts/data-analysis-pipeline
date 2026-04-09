@@ -68,10 +68,10 @@ Note any constraints on the integration: different samples, timing differences b
 
 ### Inputs
 
-- **Quantitative results:** {{steps.statistical-test-selector.output}}
-- **Qualitative themes:** {{steps.thematic-coder.output}}
+- **Quantitative results:** {{steps.Quantitative Analysis.output}}
+- **Qualitative themes:** {{steps.Qualitative Coding.output}}
 - **Research questions:** {{input.research_questions}}
-- **Study design:** Use the study design identified in {{steps.dataset-profiler.output}}
+- **Study design:** Use the study design identified in {{steps.Quantitative Analysis.output}}
 - **Integration approach:** {{input.integration_approach}} (convergent, explanatory sequential, exploratory sequential, or embedded)
 
 ### Output Format
