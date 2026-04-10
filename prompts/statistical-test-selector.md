@@ -57,7 +57,7 @@ For each assumption of the recommended test, specify:
 
 ### Inputs
 
-- **Dataset profile:** {{steps.Quantitative Analysis.output}}
+- **Dataset profile:** {{steps.previous.output}}
 - **Research questions:** {{input.specific_research_hypotheses_or}}
 - **Study design:** Use the study design identified in the dataset profile above
 - **Sample size per group:** Use the sample size identified in the dataset profile above
