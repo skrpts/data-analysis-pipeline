@@ -4,6 +4,37 @@ id: thematic-coder
 title: Thematic Coder
 description: "Applies thematic coding to qualitative data following established frameworks"
 tags: [Production, Data, Research]
+inputs:
+  qualitative_data:
+    label: "Qualitative Data"
+    description: "Qualitative data to analyse — interview transcripts, open-ended responses, or observations"
+    example: "[Paste qualitative data here]"
+    required: true
+    type: text
+  research_questions:
+    label: "Research Questions"
+    description: "The research questions guiding the study"
+    example: "RQ1: What factors influence adoption? RQ2: How do outcomes vary by demographic?"
+    required: true
+    type: text
+  coding_approach:
+    label: "Coding Approach"
+    description: "The approach for qualitative coding"
+    example: "Inductive thematic analysis"
+    required: true
+    type: text
+  theoretical_framework:
+    label: "Theoretical Framework"
+    description: "The theoretical framework guiding the research"
+    example: "Social cognitive theory (Bandura, 1986)"
+    required: true
+    type: text
+  participant_context:
+    label: "Participant Context"
+    description: "Information about research participants"
+    example: "University students aged 18-25, recruited from psychology department"
+    required: true
+    type: text
 connections:
   - target: qualitative-coding
     type: derived_from

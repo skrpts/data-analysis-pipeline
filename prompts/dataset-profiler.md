@@ -4,6 +4,37 @@ id: dataset-profiler
 title: Dataset Profiler
 description: "Profiles a dataset and identifies appropriate analysis approaches"
 tags: [Production, Data, Research]
+inputs:
+  raw_dataset_or_dataset:
+    label: "Dataset"
+    description: "The dataset to analyse"
+    example: "[Paste data or describe the dataset location]"
+    required: true
+    type: text
+  research_questions:
+    label: "Research Questions"
+    description: "The research questions guiding the study"
+    example: "RQ1: What factors influence adoption? RQ2: How do outcomes vary by demographic?"
+    required: true
+    type: text
+  sample_size:
+    label: "Sample Size"
+    description: "The number of observations or participants"
+    example: "250"
+    required: true
+    type: text
+  collection_method:
+    label: "Collection Method"
+    description: "How the data was collected"
+    example: "Semi-structured interviews, 45 minutes each"
+    required: true
+    type: text
+  variable_list:
+    label: "Variable List"
+    description: "The variables to analyse"
+    example: "Age, income, education level, satisfaction score"
+    required: true
+    type: text
 connections:
   - target: quantitative-analysis
     type: derived_from

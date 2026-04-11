@@ -4,6 +4,19 @@ id: statistical-test-selector
 title: Statistical Test Selector
 description: "Recommends appropriate statistical tests based on data characteristics and research questions"
 tags: [Production, Data, Research]
+inputs:
+  specific_research_hypotheses_or:
+    label: "Research Hypotheses"
+    description: "Specific hypotheses or research questions"
+    example: "H1: Treatment group shows significant improvement vs control"
+    required: true
+    type: text
+  alpha_level:
+    label: "Alpha Level"
+    description: "The significance level for statistical tests"
+    example: "0.05"
+    required: true
+    type: text
 connections:
   - target: quantitative-analysis
     type: derived_from

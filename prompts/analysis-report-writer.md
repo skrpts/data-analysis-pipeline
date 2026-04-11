@@ -4,6 +4,24 @@ id: analysis-report-writer
 title: Analysis Report Writer
 description: "Writes up the analysis section of a research paper or report"
 tags: [Production, Academic, Data]
+inputs:
+  discipline:
+    label: "Discipline"
+    description: "Discipline"
+    required: true
+    type: text
+  target_format:
+    label: "Target Format"
+    description: "The desired output format"
+    example: "Markdown with headings and bullet points"
+    required: true
+    type: text
+  reporting_standard:
+    label: "Reporting Standard"
+    description: "The reporting standard to follow"
+    example: "PRISMA 2020"
+    required: true
+    type: text
 connections:
   - target: quantitative-analysis
     type: derived_from

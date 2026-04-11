@@ -4,6 +4,19 @@ id: findings-synthesiser
 title: Findings Synthesiser
 description: "Synthesises quantitative and qualitative findings into an integrated narrative"
 tags: [Production, Data, Research]
+inputs:
+  research_questions:
+    label: "Research Questions"
+    description: "The research questions guiding the study"
+    example: "RQ1: What factors influence adoption? RQ2: How do outcomes vary by demographic?"
+    required: true
+    type: text
+  integration_approach:
+    label: "Integration Approach"
+    description: "How to approach the integration"
+    example: "REST API with JSON payloads, OAuth 2.0 authentication"
+    required: true
+    type: text
 connections:
   - target: quantitative-analysis
     type: derived_from
