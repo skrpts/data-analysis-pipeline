@@ -3,7 +3,7 @@ id: "26ef9ead-86b3-4252-b5a7-e7584c20a589"
 name: "data-analysis-pipeline"
 display_name: "Data Analysis Pipeline"
 description: "Quantitative and qualitative data analysis workflows for research projects"
-version: "1.1.6"
+version: "1.1.7"
 engine: ">=1.0.0"
 
 # --- Attribution ---
@@ -33,6 +33,16 @@ requires:
     - "research-data"
     - "survey-responses"
     - "interview-transcripts"
+
+# --- Output ---
+output_step: "visual-spec-generation"
+composite_steps:
+  - "quantitative-analysis"
+  - "qualitative-coding"
+  - "data-visualisation-design"
+  - "data-interpretation"
+  - "analysis-report-template"
+  - "visual-spec-generation"
 
 # --- Contents ---
 contents:
