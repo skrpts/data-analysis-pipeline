@@ -26,6 +26,21 @@ connections:
 metadata:
   estimated_duration: "60-120 minutes"
   trigger: manual
+execution:
+  - skill: "quantitative-analysis"
+    step_type: "synthesis"
+  - skill: "qualitative-coding"
+    input_from: "quantitative-analysis"
+    step_type: "synthesis"
+  - skill: "data-interpretation"
+    input_from: "qualitative-coding"
+    step_type: "synthesis"
+  - skill: "data-visualisation-design"
+    input_from: "data-interpretation"
+    step_type: "synthesis"
+  - skill: "visual-spec-generation"
+    input_from: "data-visualisation-design"
+    step_type: "synthesis"
 ---
 
 ## Overview
