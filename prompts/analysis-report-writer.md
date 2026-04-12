@@ -8,6 +8,7 @@ inputs:
   discipline:
     label: "Discipline"
     description: "Discipline"
+    example: "Cognitive Psychology"
     required: true
     type: text
   target_format:
