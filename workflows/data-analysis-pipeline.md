@@ -26,6 +26,14 @@ connections:
 metadata:
   estimated_duration: "60-120 minutes"
   trigger: manual
+output_step: "visual-spec-generation"
+composite_steps:
+  - "quantitative-analysis"
+  - "qualitative-coding"
+  - "data-visualisation-design"
+  - "data-interpretation"
+  - "analysis-report-template"
+  - "visual-spec-generation"
 execution:
   - skill: "quantitative-analysis"
     step_type: "synthesis"
