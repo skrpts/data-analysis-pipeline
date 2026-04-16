@@ -13,6 +13,8 @@ connections:
     type: uses
   - target: data-interpretation
     type: uses
+  - target: language-polish
+    type: uses
   - target: llm-service
     type: runs_on
   - target: research-statistics-reference
@@ -26,7 +28,7 @@ connections:
 metadata:
   estimated_duration: "60-120 minutes"
   trigger: manual
-output_step: "visual-spec-generation"
+output_step: "language-polish"
 composite_steps:
   - "quantitative-analysis"
   - "qualitative-coding"
@@ -34,6 +36,7 @@ composite_steps:
   - "data-interpretation"
   - "analysis-report-template"
   - "visual-spec-generation"
+  - "language-polish"
 execution:
   - skill: "quantitative-analysis"
     step_type: "synthesis"
@@ -45,6 +48,8 @@ execution:
     step_type: "synthesis"
   - skill: "visual-spec-generation"
     step_type: "synthesis"
+  - skill: "language-polish"
+    step_type: "content"
 ---
 
 ## Overview
