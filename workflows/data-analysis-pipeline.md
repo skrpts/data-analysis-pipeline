@@ -40,6 +40,7 @@ composite_steps:
 execution:
   - skill: "quantitative-analysis"
     step_type: "synthesis"
+    prompt: "dataset-profiler"
   - skill: "qualitative-coding"
     step_type: "synthesis"
   - skill: "data-interpretation"

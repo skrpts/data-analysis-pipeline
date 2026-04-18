@@ -10,7 +10,8 @@ inputs:
     description: "Qualitative data to analyse — interview transcripts, open-ended responses, or observations"
     example: "[Paste qualitative data here]"
     required: true
-    type: text
+    type: file
+    accept: ".txt,.md,.csv"
   research_questions:
     label: "Research Questions"
     description: "The research questions guiding the study"
