@@ -41,21 +41,27 @@ execution:
   - skill: "quantitative-analysis"
     step_type: "synthesis"
     prompt: "dataset-profiler"
+    output: { name: "quantitative_analysis", type: "text" }
   - skill: "qualitative-coding"
     prompt: "findings-synthesiser"
     step_type: "synthesis"
+    output: { name: "qualitative_findings", type: "text" }
   - skill: "data-interpretation"
     prompt: "interpret-data"
     step_type: "synthesis"
+    output: { name: "interpretation", type: "text" }
   - skill: "data-visualisation-design"
     prompt: "analysis-report-writer"
     step_type: "synthesis"
+    output: { name: "analysis_report", type: "text" }
   - skill: "visual-spec-generation"
     prompt: "generate-visual-spec"
     step_type: "synthesis"
+    output: { name: "visual_spec", type: "text" }
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
+    output: { name: "polished_report", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
