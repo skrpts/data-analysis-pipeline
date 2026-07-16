@@ -60,4 +60,4 @@ Provides structured guidance for quantitative data analysis in research contexts
 - Flag when sample sizes are too small for reliable inference and recommend minimum sample sizes
 - Never recommend a test without specifying its assumptions and how to check them
 - When multiple valid approaches exist, present options with trade-offs rather than dictating a single choice
-- Distinguish between exploratory and confirmatory analyses — pre-registered hypotheses require confirmatory approaches
+- Distinguish between exploratory and confirmatory analyzes — pre-registered hypotheses require confirmatory approaches

@@ -28,15 +28,15 @@ Designs data visualisations that effectively communicate research findings to ac
 
 ## Inputs
 
-- Data summary: variables to visualise, their types, and the relationship to display
+- Data summary: variables to visualize, their types, and the relationship to display
 - Target audience: academic journal, conference presentation, dissertation, general audience
-- Publication requirements: colour restrictions (greyscale vs. colour), size constraints, accessibility standards
+- Publication requirements: color restrictions (greyscale vs. color), size constraints, accessibility standards
 - Statistical results to represent: test outcomes, effect sizes, confidence intervals
 - Preferred tools: R, Python, Excel, or tool-agnostic specifications
 
 ## Process
 
-1. **Identify the message** — determine what the visualisation needs to communicate. Every figure should answer a specific question or illustrate a specific finding
+1. **Identify the message** — determine what the visualization needs to communicate. Every figure should answer a specific question or illustrate a specific finding
 2. **Select chart type** — match the data relationship to the most appropriate visual encoding:
    - Comparisons between groups: bar charts, box plots, violin plots
    - Distributions: histograms, density plots, Q-Q plots
@@ -44,13 +44,13 @@ Designs data visualisations that effectively communicate research findings to ac
    - Changes over time: line charts, area charts, slope graphs
    - Compositions: stacked bar charts, pie charts (used sparingly), treemaps
    - Qualitative themes: thematic maps, word clouds, code frequency charts
-3. **Specify design parameters** — axis labels, scales, colour palettes, legends, annotations, error bars, confidence intervals
-4. **Check accessibility** — ensure the visualisation works in greyscale, uses colourblind-friendly palettes, and has sufficient contrast
+3. **Specify design parameters** — axis labels, scales, color palettes, legends, annotations, error bars, confidence intervals
+4. **Check accessibility** — ensure the visualization works in greyscale, uses colourblind-friendly palettes, and has sufficient contrast
 5. **Provide implementation** — supply code snippets or step-by-step instructions for the researcher's preferred tool
 
 ## Outputs
 
-- Visualisation specification: chart type, data mappings, design parameters
+- Visualization specification: chart type, data mappings, design parameters
 - Implementation code or instructions for the target tool
 - Accessibility notes and alternative representations
 - Caption text suitable for publication

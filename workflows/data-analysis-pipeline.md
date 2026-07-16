@@ -97,7 +97,7 @@ Invoke the **quantitative-analysis** skill via the **statistical-test-selector**
 
 **Input:** Qualitative data (interview transcripts, open-ended survey responses, field notes), research questions, theoretical framework (if applicable)
 
-Invoke the **qualitative-coding** skill via the **thematic-coder** prompt. Apply systematic thematic coding following Braun and Clarke's six-phase approach: familiarisation, initial coding, theme searching, theme reviewing, theme defining, and reporting.
+Invoke the **qualitative-coding** skill via the **thematic-coder** prompt. Apply systematic thematic coding following Braun and Clarke's six-phase approach: familiarization, initial coding, theme searching, theme reviewing, theme defining, and reporting.
 
 **Output:** Codebook with code definitions, themed groupings, illustrative quotations, and a thematic map showing relationships between themes.
 
@@ -107,7 +107,7 @@ Invoke the **qualitative-coding** skill via the **thematic-coder** prompt. Apply
 
 **Input:** Quantitative results from Stage 2, qualitative themes from Stage 3, research questions
 
-Invoke the **quantitative-analysis** and **qualitative-coding** skills via the **findings-synthesiser** prompt. Synthesise findings across data strands, identifying where quantitative and qualitative findings converge, diverge, or complement each other.
+Invoke the **quantitative-analysis** and **qualitative-coding** skills via the **findings-synthesiser** prompt. Synthesize findings across data strands, identifying where quantitative and qualitative findings converge, diverge, or complement each other.
 
 **Output:** Integrated findings narrative with convergence/divergence analysis, triangulation assessment, and key insights.
 
@@ -119,7 +119,7 @@ Invoke the **quantitative-analysis** and **qualitative-coding** skills via the *
 
 Invoke the **data-visualisation-design** skill and the **analysis-report-writer** prompt. Produce a complete analysis section suitable for a research paper, dissertation chapter, or standalone report. Include recommendations for visualisations to support the narrative.
 
-**Output:** Complete analysis report draft with visualisation specifications.
+**Output:** Complete analysis report draft with visualization specifications.
 
 ## Error Handling
 
@@ -158,14 +158,14 @@ Invoke the **data-visualisation-design** skill and the **analysis-report-writer*
 | Recommended statistical tests | Recommended statistical tests with rationale, assumption checks required, effect size measures, and sample size adequacy assessment |
 | Codebook | Codebook with code definitions, themed groupings, illustrative quotations, and a thematic map showing relationships between themes |
 | Integrated findings narrative | Integrated findings narrative with convergence/divergence analysis, triangulation assessment, and key insights |
-| Complete analysis report draft | Complete analysis report draft with visualisation specifications |
+| Complete analysis report draft | Complete analysis report draft with visualization specifications |
 
 ## Setup
 
 Before running this workflow:
 
 1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
-2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+2. Review the included documents, assets, or source nodes and customize them to match your team, brand, or domain conventions where needed.
 3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
 
 ## Provider Notes

@@ -2,7 +2,7 @@
 type: prompt
 id: findings-synthesiser
 title: Findings Synthesiser
-description: "Synthesises quantitative and qualitative findings into an integrated narrative"
+description: "Synthesizes quantitative and qualitative findings into an integrated narrative"
 tags: [Production, Data, Research]
 inputs:
   research_questions:
@@ -32,22 +32,22 @@ metadata:
 
 ## Purpose
 
-Integrates findings from quantitative and qualitative analysis strands into a coherent synthesis. This prompt is designed for mixed-methods research but can also be used to synthesise multiple quantitative analyses or multiple qualitative analyses into a unified narrative.
+Integrates findings from quantitative and qualitative analysis strands into a coherent synthesis. This prompt is designed for mixed-methods research but can also be used to synthesize multiple quantitative analyzes or multiple qualitative analyzes into a unified narrative.
 
 ## Prompt
 
-You are a mixed-methods research expert specialising in the integration of quantitative and qualitative findings. Your task is to synthesise the analysis results provided into a coherent, integrated account that addresses the research questions and identifies where the two strands converge, diverge, or complement each other.
+You are a mixed-methods research expert specializing in the integration of quantitative and qualitative findings. Your task is to synthesize the analysis results provided into a coherent, integrated account that addresses the research questions and identifies where the two strands converge, diverge, or complement each other.
 
 ### Instructions
 
 Produce a synthesis structured as follows:
 
 **1. Strand Summaries**
-Briefly summarise the key findings from each analysis strand:
+Briefly summarize the key findings from each analysis strand:
 - Quantitative: main statistical results, effect sizes, and their practical significance
 - Qualitative: main themes, their definitions, and key supporting evidence
 
-Keep each summary to 200-300 words. Do not simply repeat the full analyses — distil the essential findings.
+Keep each summary to 200-300 words. Do not simply repeat the full analyzes — distil the essential findings.
 
 **2. Integration Matrix**
 Create a matrix that maps quantitative findings against qualitative themes. For each pairing, classify the relationship as:

@@ -24,9 +24,9 @@ Use this template as the structural backbone for writing up your analysis and re
 
 [Describe the overall analytic approach in 150-250 words. Include:]
 
-All analyses were conducted using [software] version [X.X] with the [packages] packages. The significance level was set at [alpha] for all inferential tests. [Describe missing data handling strategy]. [Describe any data transformations applied]. [For mixed methods: describe the integration strategy].
+All analyzes were conducted using [software] version [X.X] with the [packages] packages. The significance level was set at [alpha] for all inferential tests. [Describe missing data handling strategy]. [Describe any data transformations applied]. [For mixed methods: describe the integration strategy].
 
-## Preliminary Analyses
+## Preliminary Analyzes
 
 ### Descriptive Statistics
 
@@ -45,7 +45,7 @@ The Shapiro-Wilk test indicated that [variable] was [normally/non-normally] dist
 
 [If assumptions were violated, describe the remedy applied.]
 
-## Main Analyses
+## Main Analyzes
 
 ### Research Question 1: [State the research question]
 
@@ -57,7 +57,7 @@ A [test name] was conducted to examine [what was tested]. The results indicated 
 
 [Interpret the result in plain language, linking it to the research question.]
 
-[FIGURE 1: Description of the visualisation]
+[FIGURE 1: Description of the visualization]
 
 ### Research Question 2: [State the research question]
 

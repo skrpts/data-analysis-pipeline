@@ -20,7 +20,7 @@ Performs systematic qualitative data analysis following established methodologic
 
 ## When to Use
 
-- Analysing interview or focus group transcripts for a qualitative or mixed-methods study
+- Analyzing interview or focus group transcripts for a qualitative or mixed-methods study
 - Coding open-ended survey responses to identify recurring patterns
 - Performing thematic analysis on field notes or observational data
 - Developing a codebook for a multi-coder qualitative study
@@ -36,7 +36,7 @@ Performs systematic qualitative data analysis following established methodologic
 
 ## Process
 
-1. **Familiarisation** — read through the data thoroughly, noting initial impressions, recurring ideas, and striking passages
+1. **Familiarization** — read through the data thoroughly, noting initial impressions, recurring ideas, and striking passages
 2. **Initial coding** — generate codes systematically across the entire dataset. Each code captures a meaningful unit of data relevant to the research questions. Codes should be concise, descriptive, and consistently applied
 3. **Code review** — consolidate overlapping codes, split overly broad codes, and ensure each code has a clear definition
 4. **Theme searching** — group related codes into candidate themes. A theme captures something important about the data in relation to the research questions and represents a patterned response or meaning
@@ -49,7 +49,7 @@ Performs systematic qualitative data analysis following established methodologic
 - Codebook: complete list of codes with definitions and example quotations
 - Thematic map: visual representation of themes, sub-themes, and their relationships
 - Theme definitions: detailed description of each theme with scope and boundaries
-- Data extracts: key quotations organised by theme with participant identifiers
+- Data extracts: key quotations organized by theme with participant identifiers
 - Reflexivity notes: observations about the coding process and analytical decisions made
 
 ## Constraints

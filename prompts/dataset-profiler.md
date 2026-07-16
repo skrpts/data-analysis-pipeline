@@ -7,7 +7,7 @@ tags: [Production, Data, Research]
 inputs:
   raw_dataset_or_dataset:
     label: "Dataset"
-    description: "The dataset to analyse"
+    description: "The dataset to analyze"
     example: "[Paste data or describe the dataset location]"
     required: true
     type: text
@@ -31,7 +31,7 @@ inputs:
     type: text
   variable_list:
     label: "Variable List"
-    description: "The variables to analyse"
+    description: "The variables to analyze"
     example: "Age, income, education level, satisfaction score"
     required: true
     type: text
@@ -52,11 +52,11 @@ Drives the initial dataset profiling stage of the analysis pipeline. Examines da
 
 ## Prompt
 
-You are a research methods consultant specialising in data analysis planning. A researcher has provided a dataset summary for a study they are conducting. Your task is to produce a detailed dataset profile that will guide all subsequent analysis decisions.
+You are a research methods consultant specializing in data analysis planning. A researcher has provided a dataset summary for a study they are conducting. Your task is to produce a detailed dataset profile that will guide all subsequent analysis decisions.
 
 ### Instructions
 
-Analyse the dataset described below and produce a structured profile covering the following sections:
+Analyze the dataset described below and produce a structured profile covering the following sections:
 
 **1. Variable Classification**
 For each variable, determine:
@@ -70,7 +70,7 @@ Present this as a table with columns: Variable Name | Measurement Level | Role |
 **2. Missing Data Assessment**
 - Estimate the pattern of missingness based on the dataset description (MCAR, MAR, or MNAR)
 - Recommend a handling strategy: listwise deletion, pairwise deletion, multiple imputation, or maximum likelihood estimation
-- Flag any variables where missingness exceeds 10% and assess whether this threatens the validity of planned analyses
+- Flag any variables where missingness exceeds 10% and assess whether this threatens the validity of planned analyzes
 
 **3. Data Quality Flags**
 Identify potential issues including:
@@ -78,7 +78,7 @@ Identify potential issues including:
 - Likely outlier sources based on the data collection method
 - Potential ceiling or floor effects
 - Multicollinearity risks between predictor variables
-- Sample size adequacy for the planned analyses
+- Sample size adequacy for the planned analyzes
 
 **4. Recommended Analysis Approaches**
 Based on the research questions, variable types, and sample size, recommend 2-3 broad analysis strategies. For each, explain:

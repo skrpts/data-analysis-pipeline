@@ -30,7 +30,7 @@ metadata:
 
 ## Purpose
 
-Provides detailed statistical test recommendations tailored to the researcher's specific data characteristics, research questions, and study design. This prompt follows the dataset profiling stage and produces actionable guidance for conducting inferential analyses.
+Provides detailed statistical test recommendations tailored to the researcher's specific data characteristics, research questions, and study design. This prompt follows the dataset profiling stage and produces actionable guidance for conducting inferential analyzes.
 
 ## Prompt
 
@@ -78,4 +78,4 @@ For each assumption of the recommended test, specify:
 
 ### Output Format
 
-Organise the output by research question. Use a consistent structure for each question following the six sections above. Include code blocks for R and Python implementations. Use tables for assumption check summaries.
+Organize the output by research question. Use a consistent structure for each question following the six sections above. Include code blocks for R and Python implementations. Use tables for assumption check summaries.

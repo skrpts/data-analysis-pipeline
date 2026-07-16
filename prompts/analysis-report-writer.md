@@ -54,14 +54,14 @@ Open with a concise description (150-250 words) of the overall analytic approach
 - Any data transformations applied
 - For mixed methods: the integration strategy used
 
-**2. Preliminary Analyses**
+**2. Preliminary Analyzes**
 Report:
 - Descriptive statistics for all key variables (means, standard deviations, frequencies as appropriate)
 - Assumption check results (normality, homogeneity of variance, linearity)
 - Any issues identified and how they were addressed
 - Present descriptive statistics in a table following APA 7th edition formatting
 
-**3. Main Analyses**
+**3. Main Analyzes**
 For each research question or hypothesis:
 - State the research question or hypothesis
 - Report the statistical test used, with full details: test statistic, degrees of freedom, p-value, and effect size with confidence interval
@@ -79,9 +79,9 @@ For each research question or hypothesis:
 - Highlight convergences and divergences
 - Draw integrated conclusions
 
-**6. Visualisation Specifications**
+**6. Visualization Specifications**
 For each recommended figure or table:
-- Describe the visualisation type and what it shows
+- Describe the visualization type and what it shows
 - Specify axis labels, scales, and formatting
 - Provide a draft caption suitable for publication
 - Note any accessibility considerations

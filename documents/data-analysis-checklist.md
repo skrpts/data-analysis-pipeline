@@ -29,15 +29,15 @@ Use this checklist at two points: before beginning your analysis (pre-analysis) 
 - [ ] Missing data handling strategy has been selected and justified (listwise deletion, multiple imputation, maximum likelihood)
 - [ ] Outliers have been identified using appropriate methods (z-scores, IQR rule, Mahalanobis distance) and a decision has been documented for each (retain, transform, winsorise, or exclude with justification)
 - [ ] Variable distributions have been inspected visually (histograms, Q-Q plots) and with formal tests where necessary
-- [ ] Any required data transformations (log, square root, z-score standardisation) have been applied and documented
+- [ ] Any required data transformations (log, square root, z-score standardization) have been applied and documented
 - [ ] Categorical variables have been coded correctly (dummy coding, effect coding) with a clear reference category
 - [ ] The dataset has been checked for duplicate records
 - [ ] Anonymisation has been verified — no participant-identifying information remains in the analysis dataset
 
 #### Analysis Planning
 - [ ] Research questions or hypotheses are stated clearly and specifically before analysis begins
-- [ ] For confirmatory analyses: hypotheses and analysis plan were pre-registered or specified before data collection
-- [ ] For exploratory analyses: the exploratory nature is explicitly acknowledged
+- [ ] For confirmatory analyzes: hypotheses and analysis plan were pre-registered or specified before data collection
+- [ ] For exploratory analyzes: the exploratory nature is explicitly acknowledged
 - [ ] Statistical tests have been selected based on data characteristics, not results
 - [ ] Assumptions for each planned test have been identified and checks are planned
 - [ ] The significance level (alpha) has been set and justified (typically 0.05)
@@ -65,7 +65,7 @@ Use this checklist at two points: before beginning your analysis (pre-analysis) 
 - [ ] Non-significant results are reported as fully as significant results — no selective reporting
 - [ ] Multiple comparisons have been corrected where applicable
 - [ ] Descriptive statistics (means, SDs, frequencies) are reported for all key variables
-- [ ] Tables and figures are clearly labelled with informative captions
+- [ ] Tables and figures are clearly labeled with informative captions
 - [ ] Figures use colourblind-friendly palettes and work in greyscale
 - [ ] Individual data points are shown alongside summary statistics where sample sizes are small (n < 30)
 
@@ -89,4 +89,4 @@ Use this checklist at two points: before beginning your analysis (pre-analysis) 
 - [ ] Software versions and package versions are recorded
 - [ ] Random seeds are set and documented for any procedures involving randomisation
 - [ ] The analysis pipeline can be re-run from raw data to final results without manual intervention
-- [ ] All data files, scripts, and outputs are organised in a clear, logical directory structure
+- [ ] All data files, scripts, and outputs are organized in a clear, logical directory structure

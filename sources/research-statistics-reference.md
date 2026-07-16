@@ -44,7 +44,7 @@ metadata:
 
 | Measure | Test | Small | Medium | Large | Interpretation |
 |---------|------|-------|--------|-------|----------------|
-| Cohen's d | t-tests | 0.2 | 0.5 | 0.8 | Standardised mean difference |
+| Cohen's d | t-tests | 0.2 | 0.5 | 0.8 | Standardized mean difference |
 | Eta-squared (eta sq) | ANOVA | 0.01 | 0.06 | 0.14 | Proportion of variance explained |
 | Partial eta-squared | Factorial ANOVA | 0.01 | 0.06 | 0.14 | Proportion of variance explained (controlling other factors) |
 | Cohen's f | ANOVA | 0.10 | 0.25 | 0.40 | Root of variance ratio |
