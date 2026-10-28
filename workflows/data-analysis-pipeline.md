@@ -7,6 +7,10 @@ tags: [Production, Tested, Academic, Data]
 connections:
   - target: quantitative-analysis
     type: uses
+  - target: statistical-test-selection
+    type: uses
+  - target: findings-synthesis
+    type: uses
   - target: qualitative-coding
     type: uses
   - target: data-visualisation-design
@@ -25,6 +29,13 @@ connections:
     type: uses
   - target: visual-spec-generation
     type: uses
+inputs:
+  qualitative_data:
+    label: "Qualitative Data"
+    description: "Interview transcripts, open-ended survey responses, or field notes to code"
+    example: "12 interview transcripts, 30-45 minutes each, semi-structured"
+    required: true
+    type: text
 metadata:
   estimated_duration: "60-120 minutes"
   trigger: manual
@@ -41,23 +52,66 @@ execution:
   - skill: "quantitative-analysis"
     step_type: "synthesis"
     prompt: "dataset-profiler"
-    output: { name: "quantitative_analysis", type: "text" }
+    output: { name: "dataset_profile", type: "text" }
+  - skill: "statistical-test-selection"
+    prompt: "statistical-test-selector"
+    step_type: "synthesis"
+    output: { name: "test_recommendations", type: "text" }
+    bindings:
+      dataset_profile:
+        from_step: "Quantitative Analysis"
+        field: output
   - skill: "qualitative-coding"
+    prompt: "thematic-coder"
+    step_type: "synthesis"
+    output: { name: "thematic_coding", type: "text" }
+    bindings:
+      qualitative_data:
+        from_input: "qualitative_data"
+  - skill: "findings-synthesis"
     prompt: "findings-synthesiser"
     step_type: "synthesis"
-    output: { name: "qualitative_findings", type: "text" }
+    output: { name: "synthesised_findings", type: "text" }
+    bindings:
+      quantitative_findings:
+        from_step: "Statistical Test Selection"
+        field: output
+      qualitative_findings:
+        from_step: "Qualitative Coding"
+        field: output
   - skill: "data-interpretation"
     prompt: "interpret-data"
     step_type: "synthesis"
     output: { name: "interpretation", type: "text" }
+    bindings:
+      source:
+        from_step: "Findings Synthesis"
+        field: output
   - skill: "data-visualisation-design"
     prompt: "analysis-report-writer"
     step_type: "synthesis"
     output: { name: "analysis_report", type: "text" }
+    bindings:
+      dataset_profile:
+        from_step: "Quantitative Analysis"
+        field: output
+      statistical_results:
+        from_step: "Statistical Test Selection"
+        field: output
+      qualitative_themes:
+        from_step: "Qualitative Coding"
+        field: output
+      findings:
+        from_step: "Findings Synthesis"
+        field: output
   - skill: "visual-spec-generation"
     prompt: "generate-visual-spec"
     step_type: "synthesis"
     output: { name: "visual_spec", type: "text" }
+    bindings:
+      source:
+        from_step: "Data Visualisation Design"
+        field: output
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
@@ -65,6 +119,10 @@ execution:
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
+    bindings:
+      source:
+        from_step: "Visual Spec Generation"
+        field: output
 ---
 
 ## Overview

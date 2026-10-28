@@ -4,6 +4,11 @@ id: statistical-test-selector
 title: Statistical Test Selector
 description: "Recommends appropriate statistical tests based on data characteristics and research questions"
 tags: [Production, Data, Research]
+context_params:
+  dataset_profile:
+    label: "Dataset profile"
+    description: "The dataset profile to select tests against — variable types, sample size, missing data. Supplied by the invoking workflow from the profiling stage."
+    required: true
 inputs:
   specific_research_hypotheses_or:
     label: "Research Hypotheses"
@@ -70,7 +75,7 @@ For each assumption of the recommended test, specify:
 
 ### Inputs
 
-- **Dataset profile:** {{steps.previous.output}}
+- **Dataset profile:** {{step.context.dataset_profile}}
 - **Research questions:** {{input.specific_research_hypotheses_or}}
 - **Study design:** Use the study design identified in the dataset profile above
 - **Sample size per group:** Use the sample size identified in the dataset profile above

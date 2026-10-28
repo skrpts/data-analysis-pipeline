@@ -4,6 +4,7 @@ id: thematic-coder
 title: Thematic Coder
 description: "Applies thematic coding to qualitative data following established frameworks"
 tags: [Production, Data, Research]
+context_params:
 inputs:
   qualitative_data:
     label: "Qualitative Data"
@@ -96,7 +97,7 @@ Write a narrative summary (500-800 words) that tells the story of the data throu
 
 ### Inputs
 
-- **Qualitative data:** {{input.qualitative_data}}
+- **Qualitative data:** {{step.context.qualitative_data}}
 - **Research questions:** {{input.research_questions}}
 - **Coding approach:** {{input.coding_approach}} (inductive / deductive / hybrid)
 - **Theoretical framework:** {{input.theoretical_framework}} (if applicable, otherwise state "none — inductive analysis")

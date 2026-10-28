@@ -4,6 +4,15 @@ id: findings-synthesiser
 title: Findings Synthesiser
 description: "Synthesizes quantitative and qualitative findings into an integrated narrative"
 tags: [Production, Data, Research]
+context_params:
+  quantitative_findings:
+    label: "Quantitative findings"
+    description: "Findings from the quantitative strand — the recommended tests and their results. Supplied by the invoking workflow."
+    required: true
+  qualitative_findings:
+    label: "Qualitative findings"
+    description: "Findings from the qualitative strand — the thematic coding. Supplied by the invoking workflow."
+    required: true
 inputs:
   research_questions:
     label: "Research Questions"
@@ -81,10 +90,10 @@ Note any constraints on the integration: different samples, timing differences b
 
 ### Inputs
 
-- **Quantitative results:** {{steps.previous.output}}
-- **Qualitative themes:** {{steps.Qualitative Coding.output}}
+- **Quantitative results:** {{step.context.quantitative_findings}}
+- **Qualitative themes:** {{step.context.qualitative_findings}}
 - **Research questions:** {{input.research_questions}}
-- **Study design:** Use the study design identified in {{steps.previous.output}}
+- **Study design:** Use the study design identified in {{step.context.quantitative_findings}}
 - **Integration approach:** {{input.integration_approach}} (convergent, explanatory sequential, exploratory sequential, or embedded)
 
 ### Output Format

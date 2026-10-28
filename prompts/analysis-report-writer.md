@@ -4,6 +4,23 @@ id: analysis-report-writer
 title: Analysis Report Writer
 description: "Writes up the analysis section of a research paper or report"
 tags: [Production, Academic, Data]
+context_params:
+  dataset_profile:
+    label: "Dataset profile"
+    description: "The dataset profile — variable classifications and descriptive statistics. Supplied by the invoking workflow."
+    required: true
+  statistical_results:
+    label: "Statistical results"
+    description: "The recommended statistical tests and their results. Supplied by the invoking workflow."
+    required: true
+  qualitative_themes:
+    label: "Qualitative themes"
+    description: "The thematic coding of the qualitative data. Supplied by the invoking workflow."
+    required: true
+  findings:
+    label: "Synthesised findings"
+    description: "The integrated findings narrative the report is written from. Supplied by the invoking workflow."
+    required: true
 inputs:
   discipline:
     label: "Discipline"
@@ -88,10 +105,10 @@ For each recommended figure or table:
 
 ### Inputs
 
-- **Dataset profile:** {{steps.previous.output}}
-- **Statistical results:** {{steps.previous.output}}
-- **Qualitative themes:** {{steps.Qualitative Coding.output}}
-- **Synthesis findings:** {{steps.previous.output}}
+- **Dataset profile:** {{step.context.dataset_profile}}
+- **Statistical results:** {{step.context.statistical_results}}
+- **Qualitative themes:** {{step.context.qualitative_themes}}
+- **Synthesis findings:** {{step.context.findings}}
 - **Discipline:** {{input.discipline}}
 - **Target journal/format:** {{input.target_format}}
 - **Reporting standard:** {{input.reporting_standard}} (default: APA 7th edition)
